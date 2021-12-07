@@ -11,7 +11,7 @@ public class DataBase extends JFrame {
     DataBase() {
         try{
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            this.con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL", "c##Venu", "113131");
+            this.con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL", "Username", "Password");
             if(con.isClosed()) {
                 JOptionPane.showMessageDialog(null, "Problem with the connection of DB : "+con,"Error | DataBase",JOptionPane.ERROR_MESSAGE);
             }
